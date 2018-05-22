@@ -1,4 +1,8 @@
-node {
+
+agent {
+  docker {
+    image 'node'
+      {
     
   stage 'Checkout'
 
@@ -13,4 +17,6 @@ node {
      img.push('latest')
   }
 
+}
+  }
 }
